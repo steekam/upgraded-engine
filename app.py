@@ -77,7 +77,7 @@ def create_students_xml():
     """Exports the records in the students table to studente.xml file"""
     document = minidom.Document()
 
-    # Creats students root element
+    # Creates students root element
     students = document.createElement("students")
 
     printable_properties = ['id', 'student_number',
@@ -98,3 +98,6 @@ def create_students_xml():
     with open(document_path, "w") as file:
         file.write(document.toprettyxml(indent="\t"))
     print("Exported data to students.xml")
+
+@app.cli.command("using-etree")
+def export_using_etree():

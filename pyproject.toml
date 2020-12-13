@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xml-serialization-demo"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^1.1.2"
+Dumper = "^1.2.0"
+Faker = "^5.0.1"
+python-dotenv = "^0.15.0"
+Flask-SQLAlchemy = "^2.4.4"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.4"
+pylint = "^2.6.0"
+pylint-flask = "^0.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

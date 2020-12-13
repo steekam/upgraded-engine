@@ -99,5 +99,3 @@ def create_students_xml():
         file.write(document.toprettyxml(indent="\t"))
     print("Exported data to students.xml")
 
-@app.cli.command("using-etree")
-def export_using_etree():

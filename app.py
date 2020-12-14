@@ -102,7 +102,6 @@ def create_students_xml():
 
 @app.cli.command("deserialize")
 def deserialize_xml_file():
-    document_path = Path.joinpath(basedir, "students.xml")
     document = minidom.parse("students.xml")
     for student_element in document.getElementsByTagName("student"):
         element_nodes = [node for node in student_element.childNodes if node.nodeType == minidom.Node.ELEMENT_NODE]

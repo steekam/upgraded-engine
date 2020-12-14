@@ -13,7 +13,8 @@ The application comes with several flask CLI helper commands to help setup the p
 - `flask migrate` : Creates a `db.sqlite` database file and creates a `student` table.
 - `flask seed-students <COUNT>` : Seeds student records.
 - `flask refresh` : Drops all tables and creates the schema again.
-- `flask export-students` : Exports student records to `student.xml` file
+- `flask export-students` : Exports student records to `student.xml` file.
+- `flask deserialize` : Deserialize data in `student.xml` file into Student objects.
 
 ## Demo
 - Install dependencies

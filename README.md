@@ -3,7 +3,7 @@
 A simple Flask "CLI" application that serializes data from the database
 
 ## Project Setup
-Install depencies based on `requirements.txt`
+Install depencies
 ```bash
 pip install
 ```

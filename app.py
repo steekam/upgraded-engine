@@ -4,9 +4,7 @@ from xml.dom import minidom
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from faker import Faker
-from dumper import dump
 import click
-import xmltodict
 
 # Initialize app
 app = Flask(__name__)

@@ -40,14 +40,6 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "dumper"
-version = "1.2.0"
-description = "Tool to conveniently describe any Python datastructure"
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "faker"
 version = "5.0.1"
 description = "Faker is a Python package that generates fake data for you."
@@ -280,18 +272,10 @@ category = "dev"
 optional = false
 python-versions = "*"
 
-[[package]]
-name = "xmltodict"
-version = "0.12.0"
-description = "Makes working with XML feel like you are working with JSON"
-category = "main"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "be99f803c9ce12fa2d2d3405583ea2bd530c7eb72955f4e2db1091d7df845b6c"
+content-hash = "a10b61a100561112b4b909e25c998e5718e38dfb1f663de0df9a97504eeda04c"
 
 [metadata.files]
 astroid = [
@@ -308,10 +292,6 @@ click = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-dumper = [
-    {file = "Dumper-1.2.0-py2.py3-none-any.whl", hash = "sha256:eeea825dbe84f9869478b3bcd9f1b47d8f0e71cee41d129c73ecec3e20a6d47c"},
-    {file = "Dumper-1.2.0.tar.gz", hash = "sha256:36a0e517138626691b3c9c3baa0577b49c3eba07620bf6ee0437def9715b5c89"},
 ]
 faker = [
     {file = "Faker-5.0.1-py3-none-any.whl", hash = "sha256:1fcb415562ee6e2395b041e85fa6901d4708d30b84d54015226fa754ed0822c3"},
@@ -480,8 +460,4 @@ werkzeug = [
 ]
 wrapt = [
     {file = "wrapt-1.12.1.tar.gz", hash = "sha256:b62ffa81fb85f4332a4f609cab4ac40709470da05643a082ec1eb88e6d9b97d7"},
-]
-xmltodict = [
-    {file = "xmltodict-0.12.0-py2.py3-none-any.whl", hash = "sha256:8bbcb45cc982f48b2ca8fe7e7827c5d792f217ecf1792626f808bf41c3b86051"},
-    {file = "xmltodict-0.12.0.tar.gz", hash = "sha256:50d8c638ed7ecb88d90561beedbf720c9b4e851a9fa6c47ebd64e99d166d8a21"},
 ]

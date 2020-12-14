@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<students>
+	<student>
+		<id>1</id>
+		<student_number>79</student_number>
+		<first_name>Brian</first_name>
+		<last_name>Clayton</last_name>
+		<email>cedwards@alexander.org</email>
+	</student>
+	<student>
+		<id>2</id>
+		<student_number>13</student_number>
+		<first_name>Anthony</first_name>
+		<last_name>Goodman</last_name>
+		<email>williamsstephanie@yahoo.com</email>
+	</student>
+	<student>
+		<id>3</id>
+		<student_number>95</student_number>
+		<first_name>Timothy</first_name>
+		<last_name>Hall</last_name>
+		<email>osanchez@gmail.com</email>
+	</student>
+	<student>
+		<id>4</id>
+		<student_number>71</student_number>
+		<first_name>Robert</first_name>
+		<last_name>Keller</last_name>
+		<email>manuel95@hotmail.com</email>
+	</student>
+	<student>
+		<id>5</id>
+		<student_number>25</student_number>
+		<first_name>Renee</first_name>
+		<last_name>Campbell</last_name>
+		<email>nsoto@gmail.com</email>
+	</student>
+</students>

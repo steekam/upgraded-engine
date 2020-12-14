@@ -6,6 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from faker import Faker
 from dumper import dump
 import click
+import xmltodict
 
 # Initialize app
 app = Flask(__name__)
@@ -99,3 +100,12 @@ def create_students_xml():
         file.write(document.toprettyxml(indent="\t"))
     print("Exported data to students.xml")
 
+@app.cli.command("deserialize")
+def deserialize_xml_file():
+    document_path = Path.joinpath(basedir, "students.xml")
+    document = minidom.parse("students.xml")
+    for student_element in document.getElementsByTagName("student"):
+        element_nodes = [node for node in student_element.childNodes if node.nodeType == minidom.Node.ELEMENT_NODE]
+        student_properties_dict = dict([(node.tagName, node.firstChild.nodeValue) for node in element_nodes])
+        student = Student(**student_properties_dict)
+        print(student)
